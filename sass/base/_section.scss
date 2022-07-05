@@ -1,0 +1,39 @@
+.section {
+     padding-top: 60px;
+     padding-bottom: 60px;
+}
+
+.section__title { 
+     margin-bottom: 30px; 
+     text-align: center; 
+     @include font(28px, 700, 33px); 
+     letter-spacing: 0.03em;     
+ }
+
+
+ .section_other-background {
+     background-color: #F5F4FA;
+ }
+ 
+ 
+/*.section {
+     padding-top: 94px;
+     padding-bottom: 94px;
+}
+
+.section_no-padding-top {
+     padding-top: 0px;
+  }
+
+.section_other-background {
+     background-color: #F5F4FA;
+ }
+ 
+.section__title { 
+     margin-bottom: 50px; 
+     text-align: center;  
+     font-size: 36px;
+     line-height: 1.17;
+     letter-spacing: 0.03em;     
+ }
+*/

@@ -1,0 +1,35 @@
+.work {
+   display: flex;
+}
+
+.work__item {
+   flex-basis: calc((100% - 60px) / 3);
+   margin-right: 30px;
+   position: relative;
+
+   &:last-child {
+      margin-right: 0px;
+   }
+}
+
+.work__link {
+   display: block;
+   text-decoration: none;      
+}
+
+.work__img-wrapper {
+  @extend %align;
+  background-color: rgba(47, 48, 58, 0.8);
+  min-width: 100%;
+  height: 70px; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  }
+
+.work__title {  
+   @include font(14px, 700, 16px);      
+   text-transform: uppercase;    
+   color: var(--primary-white-color);
+   text-decoration: none;
+}
