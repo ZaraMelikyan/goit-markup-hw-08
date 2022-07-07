@@ -27,10 +27,10 @@
           >
           <ul class="menu header__menu">
             <li class="menu__item">
-              <a class="menu__link menu__link_current" href="./index.html">Студия</a>
+              <a class="menu__link" href="./index.html">Студия</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="./portfolio.html">Портфолио</a>
+              <a class="menu__link menu__link_current" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">Контакты</a>
@@ -58,7 +58,7 @@
               >+38 096 111 11 11</a
             >
           </li>
-        </ul>        
+        </ul>
       </div>
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
@@ -67,41 +67,49 @@
               <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
           </button>
-          <ul class="mobile-menu__menu">
-            <li class="">
-              <a class="" href="./index.html">Студия</a>
+          <ul class="mobile-nav">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link mobile-nav__link_current" href="./index.html">Студия</a>
             </li>
-            <li class="">
-              <a class="" href="./portfolio.html">Портфолио</a>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="">
-              <a class="" href="#">Контакты</a>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="#">Контакты</a>
             </li>
           </ul>
-          <ul class="mobile-menu__contact">
-            <li class="">
-              <a class="" href="tel:+380961111111">
-              +38 096 111 11 11</a>
+          <ul class="mobile-contact">
+            <li class="mobile-contact__item">
+              <a class="mobile-contact__phone" href="tel:+380961111111"> +38 096 111 11 11</a>
             </li>
-            <li class="">
-              <a class="" href="mailto:info@devstudio.com">
-                info@devstudio.com</a>
-            </li>            
-          </ul>   
-          <ul>
-            <li><a class="" href="#">Instagram</a></li>
-            <li><a class="" href="#">Twitter</a></li>
-            <li><a class="" href="#">Facebook</a></li>
-            <li><a class="" href="#">Linkedln</a></li>
-          </ul>     
+            <li class="mobile-contact__item">
+              <a class="mobile-contact__mail" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-social">
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="#">Facebook</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="#">Linkedln</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
-   <main>
+    <main>
       <section class="section">
         <div class="container">
           <h1 class="visual-hidden">Наши работы</h1>
-         <!-- <ul class="filter-list list">
+          <!-- <ul class="filter-list list">
             <li class="filter-list-item">
               <button class="filter-btn current" type="button">Все</button>
             </li>
@@ -122,38 +130,60 @@
           <ul class="gallery">
             <li class="gallery__item">
               <a class="gallery__link block" href="#">
-                <div class="gallery__thumb"><picture>
-                  <source
-                    srcset="./images/portfolio/technokr-desktop.webp 1x, ./images/portfolio/technokr-desktop@2x.webp 2x"
-                    media="(min-width: 1200px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/portfolio/technokr-desktop.jpg 1x, ./images/portfolio/technokr-desktop@2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />              
-          
-                  <source
-                    srcset="./images/portfolio/technokr-tablet.webp 1x, ./images/portfolio/technokr-tablet@2x.webp 2x"
-                    media="(min-width: 768px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/portfolio/technokr-tablet.jpg 1x, ./images/portfolio/technokr-tablet@2x.jpg 2x"
-                    media="(min-width: 768px)"
-                  />
-    
-                  <source
-                    srcset="./images/portfolio/technokr-mobile.webp 1x, ./images/portfolio/technokr-mobile@2x.webp 2x"
-                    media="(max-width: 767px)"
-                    type="image/webp"
-                  />                 
-                  <source
-                    srcset="./images/portfolio/technokr-mobile.jpg 1x, ./images/portfolio/technokr-mobile@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                  />
-                  <img src="./images/portfolio/technokr-mobile.jpg" alt="Экран открытого ноутбука"/>
-                </picture>   
+                <div class="gallery__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/technokr-desktop.webp    1x,
+                        ./images/portfolio/technokr-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/technokr-desktop.jpg    1x,
+                        ./images/portfolio/technokr-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/technokr-tablet.webp    1x,
+                        ./images/portfolio/technokr-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/technokr-tablet.jpg    1x,
+                        ./images/portfolio/technokr-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/technokr-mobile.webp    1x,
+                        ./images/portfolio/technokr-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/technokr-mobile.jpg    1x,
+                        ./images/portfolio/technokr-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/technokr-mobile.jpg"
+                      alt="Экран открытого ноутбука"
+                    />
+                  </picture>
                   <p class="gallery__thumb-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -168,38 +198,57 @@
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
-                <div class="gallery__thumb"><picture>
-                  <source
-                    srcset="./images/portfolio/poster-desktop.webp 1x, ./images/portfolio/poster-desktop@2x.webp 2x"
-                    media="(min-width: 1200px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/portfolio/poster-desktop.jpg 1x, ./images/portfolio/poster-desktop@2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />              
-          
-                  <source
-                    srcset="./images/portfolio/poster-tablet.webp 1x, ./images/portfolio/poster-tablet@2x.webp 2x"
-                    media="(min-width: 768px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/portfolio/poster-tablet.jpg 1x, ./images/portfolio/poster-tablet@2x.jpg 2x"
-                    media="(min-width: 768px)"
-                  />
-    
-                  <source
-                    srcset="./images/portfolio/poster-mobile.webp 1x, ./images/portfolio/poster-mobile@2x.webp 2x"
-                    media="(max-width: 767px)"
-                    type="image/webp"
-                  />                 
-                  <source
-                    srcset="./images/portfolio/poster-mobile.jpg 1x, ./images/portfolio/poster-mobile@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                  />
-                  <img src="./images/portfolio/poster-mobile.jpg" alt="Баскетбалисты"/>
-                </picture> 
+                <div class="gallery__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/poster-desktop.webp    1x,
+                        ./images/portfolio/poster-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/poster-desktop.jpg    1x,
+                        ./images/portfolio/poster-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/poster-tablet.webp    1x,
+                        ./images/portfolio/poster-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/poster-tablet.jpg    1x,
+                        ./images/portfolio/poster-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/poster-mobile.webp    1x,
+                        ./images/portfolio/poster-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/poster-mobile.jpg    1x,
+                        ./images/portfolio/poster-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/portfolio/poster-mobile.jpg" alt="Баскетбалисты" />
+                  </picture>
                   <p class="gallery__thumb-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -214,38 +263,61 @@
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
-                <div class="gallery__thumb"><picture>
-                  <source
-                    srcset="./images/portfolio/seafood-desktop.webp 1x, ./images/portfolio/seafood-desktop@2x.webp 2x"
-                    media="(min-width: 1200px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/portfolio/seafood-desktop.jpg 1x, ./images/portfolio/seafood-desktop@2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />              
-          
-                  <source
-                    srcset="./images/portfolio/seafood-tablet.webp 1x, ./images/portfolio/seafood-tablet@2x.webp 2x"
-                    media="(min-width: 768px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/portfolio/seafood-tablet.jpg 1x, ./images/portfolio/seafood-tablet@2x.jpg 2x"
-                    media="(min-width: 768px)"
-                  />
-    
-                  <source
-                    srcset="./images/portfolio/seafood-mobile.webp 1x, ./images/portfolio/seafood-mobile@2x.webp 2x"
-                    media="(max-width: 767px)"
-                    type="image/webp"
-                  />                 
-                  <source
-                    srcset="./images/portfolio/seafood-mobile.jpg 1x, ./images/portfolio/seafood-mobile@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                  />
-                  <img src="./images/portfolio/seafood-mobile.jpg" alt="Логотип ресторана морепродуктов" class="picture-img"/>
-                </picture> 
+                <div class="gallery__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-desktop.webp    1x,
+                        ./images/portfolio/seafood-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-desktop.jpg    1x,
+                        ./images/portfolio/seafood-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-tablet.webp    1x,
+                        ./images/portfolio/seafood-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-tablet.jpg    1x,
+                        ./images/portfolio/seafood-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-mobile.webp    1x,
+                        ./images/portfolio/seafood-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-mobile.jpg    1x,
+                        ./images/portfolio/seafood-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/seafood-mobile.jpg"
+                      alt="Логотип ресторана морепродуктов"
+                      class="picture-img"
+                    />
+                  </picture>
                   <p class="gallery__thumb-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -260,37 +332,56 @@
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
-                <div class="gallery__thumb"><picture>
-                  <source
-                    srcset="./images/portfolio/prime-desktop.webp 1x, ./images/portfolio/prime-desktop@2x.webp 2x"
-                    media="(min-width: 1200px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/portfolio/prime-desktop.jpg 1x, ./images/portfolio/prime-desktop@2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />              
-          
-                  <source
-                    srcset="./images/portfolio/prime-tablet.webp 1x, ./images/portfolio/prime-tablet@2x.webp 2x"
-                    media="(min-width: 768px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/portfolio/prime-tablet.jpg 1x, ./images/portfolio/prime-tablet@2x.jpg 2x"
-                    media="(min-width: 768px)"
-                  />    
-                  <source
-                    srcset="./images/portfolio/prime-mobile.webp 1x, ./images/portfolio/prime-mobile@2x.webp 2x"
-                    media="(max-width: 767px)"
-                    type="image/webp"
-                  />                 
-                  <source
-                    srcset="./images/portfolio/prime-mobile.jpg 1x, ./images/portfolio/prime-mobile@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                  />
-                  <img src="./images/portfolio/prime-mobile.jpg" alt="Наушники"/>
-                </picture>                   
+                <div class="gallery__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-desktop.webp    1x,
+                        ./images/portfolio/prime-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-desktop.jpg    1x,
+                        ./images/portfolio/prime-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-tablet.webp    1x,
+                        ./images/portfolio/prime-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-tablet.jpg    1x,
+                        ./images/portfolio/prime-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-mobile.webp    1x,
+                        ./images/portfolio/prime-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-mobile.jpg    1x,
+                        ./images/portfolio/prime-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/portfolio/prime-mobile.jpg" alt="Наушники" />
+                  </picture>
                   <p class="gallery__thumb-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -305,37 +396,56 @@
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
-                <div class="gallery__thumb"><picture>
-                  <source
-                    srcset="./images/portfolio/boxes-desktop.webp 1x, ./images/portfolio/boxes-desktop@2x.webp 2x"
-                    media="(min-width: 1200px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/portfolio/boxes-desktop.jpg 1x, ./images/portfolio/boxes-desktop@2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />              
-          
-                  <source
-                    srcset="./images/portfolio/boxes-tablet.webp 1x, ./images/portfolio/boxes-tablet@2x.webp 2x"
-                    media="(min-width: 768px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/portfolio/boxes-tablet.jpg 1x, ./images/portfolio/boxes-tablet@2x.jpg 2x"
-                    media="(min-width: 768px)"
-                  />    
-                  <source
-                    srcset="./images/portfolio/boxes-mobile.webp 1x, ./images/portfolio/boxes-mobile@2x.webp 2x"
-                    media="(max-width: 767px)"
-                    type="image/webp"
-                  />                 
-                  <source
-                    srcset="./images/portfolio/boxes-mobile.jpg 1x, ./images/portfolio/boxes-mobile@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                  />
-                  <img src="./images/portfolio/boxes-mobile.jpg" alt="Две коробки"/>
-                </picture> 
+                <div class="gallery__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-desktop.webp    1x,
+                        ./images/portfolio/boxes-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-desktop.jpg    1x,
+                        ./images/portfolio/boxes-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-tablet.webp    1x,
+                        ./images/portfolio/boxes-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-tablet.jpg    1x,
+                        ./images/portfolio/boxes-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-mobile.webp    1x,
+                        ./images/portfolio/boxes-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-mobile.jpg    1x,
+                        ./images/portfolio/boxes-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/portfolio/boxes-mobile.jpg" alt="Две коробки" />
+                  </picture>
                   <p class="gallery__thumb-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -350,37 +460,56 @@
             </li>
             <li class="gallery__item">
               <a class="gallery__list" href="#">
-                <div class="gallery__thumb"><picture>
-                  <source
-                    srcset="./images/portfolio/inspiration-desktop.webp 1x, ./images/portfolio/inspiration-desktop@2x.webp 2x"
-                    media="(min-width: 1200px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/portfolio/inspiration-desktop.jpg 1x, ./images/portfolio/inspiration-desktop@2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />              
-          
-                  <source
-                    srcset="./images/portfolio/inspiration-tablet.webp 1x, ./images/portfolio/inspiration-tablet@2x.webp 2x"
-                    media="(min-width: 768px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/portfolio/inspiration-tablet.jpg 1x, ./images/portfolio/inspiration-tablet@2x.jpg 2x"
-                    media="(min-width: 768px)"
-                  />    
-                  <source
-                    srcset="./images/portfolio/inspiration-mobile.webp 1x, ./images/portfolio/inspiration-mobile@2x.webp 2x"
-                    media="(max-width: 767px)"
-                    type="image/webp"
-                  />                 
-                  <source
-                    srcset="./images/portfolio/inspiration-mobile.jpg 1x, ./images/portfolio/inspiration-mobile@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                  />
-                  <img src="./images/portfolio/inspiration-mobile.jpg" alt="Монитор" />
-                </picture> 
+                <div class="gallery__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/inspiration-desktop.webp    1x,
+                        ./images/portfolio/inspiration-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/inspiration-desktop.jpg    1x,
+                        ./images/portfolio/inspiration-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/inspiration-tablet.webp    1x,
+                        ./images/portfolio/inspiration-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/inspiration-tablet.jpg    1x,
+                        ./images/portfolio/inspiration-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/inspiration-mobile.webp    1x,
+                        ./images/portfolio/inspiration-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/inspiration-mobile.jpg    1x,
+                        ./images/portfolio/inspiration-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/portfolio/inspiration-mobile.jpg" alt="Монитор" />
+                  </picture>
                   <p class="gallery__thumb-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -395,37 +524,56 @@
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
-                <div class="gallery__thumb"><picture>
-                  <source
-                    srcset="./images/portfolio/limited-desktop.webp 1x, ./images/portfolio/limited-desktop@2x.webp 2x"
-                    media="(min-width: 1200px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/portfolio/limited-desktop.jpg 1x, ./images/portfolio/limited-desktop@2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />              
-          
-                  <source
-                    srcset="./images/portfolio/limited-tablet.webp 1x, ./images/portfolio/limited-tablet@2x.webp 2x"
-                    media="(min-width: 768px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/portfolio/limited-tablet.jpg 1x, ./images/portfolio/limited-tablet@2x.jpg 2x"
-                    media="(min-width: 768px)"
-                  />    
-                  <source
-                    srcset="./images/portfolio/limited-mobile.webp 1x, ./images/portfolio/limited-mobile@2x.webp 2x"
-                    media="(max-width: 767px)"
-                    type="image/webp"
-                  />                 
-                  <source
-                    srcset="./images/portfolio/limited-mobile.jpg 1x, ./images/portfolio/limited-mobile@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                  />
-                  <img src="./images/portfolio/limited-mobile.jpg" alt="Открытый журнал" />
-                </picture> 
+                <div class="gallery__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-desktop.webp    1x,
+                        ./images/portfolio/limited-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-desktop.jpg    1x,
+                        ./images/portfolio/limited-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-tablet.webp    1x,
+                        ./images/portfolio/limited-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-tablet.jpg    1x,
+                        ./images/portfolio/limited-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-mobile.webp    1x,
+                        ./images/portfolio/limited-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-mobile.jpg    1x,
+                        ./images/portfolio/limited-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/portfolio/limited-mobile.jpg" alt="Открытый журнал" />
+                  </picture>
                   <p class="gallery__thumb-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -440,37 +588,56 @@
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
-                <div class="gallery__thumb"><picture>
-                  <source
-                    srcset="./images/portfolio/lab-desktop.webp 1x, ./images/portfolio/lab-desktop@2x.webp 2x"
-                    media="(min-width: 1200px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/portfolio/lab-desktop.jpg 1x, ./images/portfolio/lab-desktop@2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />              
-          
-                  <source
-                    srcset="./images/portfolio/lab-tablet.webp 1x, ./images/portfolio/lab-tablet@2x.webp 2x"
-                    media="(min-width: 768px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/portfolio/lab-tablet.jpg 1x, ./images/portfolio/lab-tablet@2x.jpg 2x"
-                    media="(min-width: 768px)"
-                  />    
-                  <source
-                    srcset="./images/portfolio/lab-mobile.webp 1x, ./images/portfolio/lab-mobile@2x.webp 2x"
-                    media="(max-width: 767px)"
-                    type="image/webp"
-                  />                 
-                  <source
-                    srcset="./images/portfolio/lab-mobile.jpg 1x, ./images/portfolio/lab-mobile@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                  />
-                  <img src="./images/portfolio/lab-mobile.jpg" alt="Бирка от одежды" />
-                </picture>
+                <div class="gallery__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-desktop.webp    1x,
+                        ./images/portfolio/lab-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-desktop.jpg    1x,
+                        ./images/portfolio/lab-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-tablet.webp    1x,
+                        ./images/portfolio/lab-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-tablet.jpg    1x,
+                        ./images/portfolio/lab-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-mobile.webp    1x,
+                        ./images/portfolio/lab-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-mobile.jpg    1x,
+                        ./images/portfolio/lab-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/portfolio/lab-mobile.jpg" alt="Бирка от одежды" />
+                  </picture>
                   <p class="gallery__thumb-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -485,37 +652,56 @@
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
-                <div class="gallery__thumb"><picture>
-                  <source
-                    srcset="./images/portfolio/growing-desktop.webp 1x, ./images/portfolio/growing-desktop@2x.webp 2x"
-                    media="(min-width: 1200px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/portfolio/growing-desktop.jpg 1x, ./images/portfolio/growing-desktop@2x.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />              
-          
-                  <source
-                    srcset="./images/portfolio/growing-tablet.webp 1x, ./images/portfolio/growing-tablet@2x.webp 2x"
-                    media="(min-width: 768px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="./images/portfolio/growing-tablet.jpg 1x, ./images/portfolio/growing-tablet@2x.jpg 2x"
-                    media="(min-width: 768px)"
-                  />    
-                  <source
-                    srcset="./images/portfolio/growing-mobile.webp 1x, ./images/portfolio/growing-mobile@2x.webp 2x"
-                    media="(max-width: 767px)"
-                    type="image/webp"
-                  />                 
-                  <source
-                    srcset="./images/portfolio/growing-mobile.jpg 1x, ./images/portfolio/growing-mobile@2x.jpg 2x"
-                    media="(max-width: 767px)"
-                  />
-                  <img src="./images/portfolio/growing-mobile.jpg" alt="Ноутбук" />
-                </picture>
+                <div class="gallery__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/growing-desktop.webp    1x,
+                        ./images/portfolio/growing-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/growing-desktop.jpg    1x,
+                        ./images/portfolio/growing-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/growing-tablet.webp    1x,
+                        ./images/portfolio/growing-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/growing-tablet.jpg    1x,
+                        ./images/portfolio/growing-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/growing-mobile.webp    1x,
+                        ./images/portfolio/growing-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/growing-mobile.jpg    1x,
+                        ./images/portfolio/growing-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/portfolio/growing-mobile.jpg" alt="Ноутбук" />
+                  </picture>
                   <p class="gallery__thumb-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
@@ -552,10 +738,14 @@
                 </a>
               </li>
               <li class="contacts__item">
-                <a class="contacts__link social__link_color_grey" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="contacts__link social__link_color_grey" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="contacts__item">
-                <a class="contacts__link social__link_color_grey" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="contacts__link social__link_color_grey" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -564,8 +754,9 @@
           <b class="social__text">присоединяйтесь</b>
           <ul class="social">
             <li class="social__item">
-              <a class="social__link social__link_theme_dark"
-                href="#"                
+              <a
+                class="social__link social__link_theme_dark"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -624,7 +815,9 @@
             </button>
           </label>
         </form>
-      </div>      
+      </div>
+
+      <script src="./js/mobile-menu.js"></script>
     </footer>
   </body>
 </html>
