@@ -31,7 +31,7 @@
     border: 0px solid transparent;
 }
 
-  /*tablet */ 
+  
 @media screen and (max-width: 1199px) {
     .hero {
         padding-top: 118px;
@@ -52,7 +52,8 @@
             @include font(26px, 900, 42px);
         }
     } 
-/* mobile */
+
+
 @media screen and (max-width: 767px) {
     .hero {    
         max-width: 480px;          
@@ -68,7 +69,7 @@
              }
         }
 
-/* desktop */
+
 @media screen and (min-width: 1200px) {
     .hero {
        padding-top: 200px;

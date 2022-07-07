@@ -1,3 +1,9 @@
+@media screen and (max-width: 768px) {
+   .section_no-padding-top {
+       display: none;
+   }
+}
+
 .work {
    display: flex;
 }
@@ -33,3 +39,4 @@
    color: var(--primary-white-color);
    text-decoration: none;
 }
+

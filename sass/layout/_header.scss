@@ -7,7 +7,6 @@
     align-items: center;    
 }
 
-/*esi menak plansetinna */
 @media screen and (max-width: 1199px) {
     .menu__link_current::after {
         width: calc(100% + 2px);
@@ -27,7 +26,6 @@
     }
 }
 
-/*esi menak herahosinna */
 
 @media screen and (max-width: 767px) {
 
@@ -61,8 +59,6 @@
     }
 }
 
-
- /* planshetic sksac */
 @media screen and (min-width: 768px) {
     .burger-btn {
         display: none;
@@ -139,8 +135,8 @@
     }
 }
 
-/* esi menak komp */
-@media screen and (min-width: 1199px) {
+
+@media screen and (min-width: 1200px) {
     .contact {
         display: flex;
         align-items: center;
