@@ -17,37 +17,23 @@
     color: var(--secondary-text-color);   
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
     .privilege {
         display: flex;  
-        flex-wrap: wrap;   
+        flex-wrap: wrap;
     }
     
     .privilege__item {
         flex-basis: calc((100% - 30px) / 2);
     
-       &:nth-child(even) {
+        &:nth-child(odd) {
             margin-right: 30px;
         }
 
         &:nth-child(n+3) {
-            margin-right: 30px;
+            margin-bottom: 30px;
         }
     }
-}
-
-@media screen and (max-width: 767px) {
-.privilege__item {
-    width: 450px;
-
-    &:not(:last-child) {
-        margin-bottom: 30px;
-    }
-}
-
-.privilege__title { 
-    text-align: center;   
-}
 }
 
 @media screen and (min-width: 1200px) {    
@@ -62,6 +48,21 @@
             margin-right: 30px;
         }
     }
+}
+
+
+@media screen and (max-width: 767px) {
+    .privilege__item {
+       max-width: 450px;
+   
+       &:not(:last-child) {
+           margin-bottom: 30px;
+       }
+   }
+   
+   .privilege__title { 
+       text-align: center;   
+   }
 }
 
 

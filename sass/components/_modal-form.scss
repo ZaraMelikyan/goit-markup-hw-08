@@ -151,6 +151,12 @@
       }
   }
   
+
+  @media screen and (min-width: 1200px) {
   
-  
+    modal-form-title {   
+      @include font(20px, 700, 23px);    
+      letter-spacing: 0.03em;
+  }
+} 
   

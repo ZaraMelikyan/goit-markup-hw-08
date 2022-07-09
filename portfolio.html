@@ -109,23 +109,23 @@
       <section class="section">
         <div class="container">
           <h1 class="visual-hidden">Наши работы</h1>
-          <!-- <ul class="filter-list list">
-            <li class="filter-list-item">
-              <button class="filter-btn current" type="button">Все</button>
+          <ul class="filter">
+            <li class="filter__item">
+              <button class="filter__btn current" type="button">Все</button>
             </li>
-            <li class="filter-list-item">
-              <button class="filter-btn" type="button">Веб-сайты</button>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Веб-сайты</button>
             </li>
-            <li class="filter-list-item">
-              <button class="filter-btn" type="button">Приложения</button>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Приложения</button>
             </li>
-            <li class="filter-list-item">
-              <button class="filter-btn" type="button">Дизайн</button>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Дизайн</button>
             </li>
-            <li class="filter-list-item">
-              <button class="filter-btn" type="button">Маркетинг</button>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Маркетинг</button>
             </li>
-          </ul> -->
+          </ul>
 
           <ul class="gallery">
             <li class="gallery__item">
@@ -182,6 +182,7 @@
                     <img
                       src="./images/portfolio/technokr-mobile.jpg"
                       alt="Экран открытого ноутбука"
+                      class="picture-img"
                     />
                   </picture>
                   <p class="gallery__thumb-text">
@@ -247,7 +248,11 @@
                       "
                       media="(max-width: 767px)"
                     />
-                    <img src="./images/portfolio/poster-mobile.jpg" alt="Баскетбалисты" />
+                    <img
+                      src="./images/portfolio/poster-mobile.jpg"
+                      alt="Баскетбалисты"
+                      class="picture-img"
+                    />
                   </picture>
                   <p class="gallery__thumb-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -380,7 +385,11 @@
                       "
                       media="(max-width: 767px)"
                     />
-                    <img src="./images/portfolio/prime-mobile.jpg" alt="Наушники" />
+                    <img
+                      src="./images/portfolio/prime-mobile.jpg"
+                      alt="Наушники"
+                      class="picture-img"
+                    />
                   </picture>
                   <p class="gallery__thumb-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -444,7 +453,11 @@
                       "
                       media="(max-width: 767px)"
                     />
-                    <img src="./images/portfolio/boxes-mobile.jpg" alt="Две коробки" />
+                    <img
+                      src="./images/portfolio/boxes-mobile.jpg"
+                      alt="Две коробки"
+                      class="picture-img"
+                    />
                   </picture>
                   <p class="gallery__thumb-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -508,7 +521,11 @@
                       "
                       media="(max-width: 767px)"
                     />
-                    <img src="./images/portfolio/inspiration-mobile.jpg" alt="Монитор" />
+                    <img
+                      src="./images/portfolio/inspiration-mobile.jpg"
+                      alt="Монитор"
+                      class="picture-img"
+                    />
                   </picture>
                   <p class="gallery__thumb-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -572,7 +589,11 @@
                       "
                       media="(max-width: 767px)"
                     />
-                    <img src="./images/portfolio/limited-mobile.jpg" alt="Открытый журнал" />
+                    <img
+                      src="./images/portfolio/limited-mobile.jpg"
+                      alt="Открытый журнал"
+                      class="picture-img"
+                    />
                   </picture>
                   <p class="gallery__thumb-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -636,7 +657,11 @@
                       "
                       media="(max-width: 767px)"
                     />
-                    <img src="./images/portfolio/lab-mobile.jpg" alt="Бирка от одежды" />
+                    <img
+                      src="./images/portfolio/lab-mobile.jpg"
+                      alt="Бирка от одежды"
+                      class="picture-img"
+                    />
                   </picture>
                   <p class="gallery__thumb-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -700,7 +725,11 @@
                       "
                       media="(max-width: 767px)"
                     />
-                    <img src="./images/portfolio/growing-mobile.jpg" alt="Ноутбук" />
+                    <img
+                      src="./images/portfolio/growing-mobile.jpg"
+                      alt="Ноутбук"
+                      class="picture-img"
+                    />
                   </picture>
                   <p class="gallery__thumb-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -721,87 +750,89 @@
     <!--Footer-->
     <footer class="footer">
       <div class="container footer__container-flex">
-        <div>
-          <a class="logo footer__logo" lang="en" href="./index.html"
-            >Web<span class="logo__part logo_theme_dark">Studio</span></a
-          >
-          <address class="contacts">
-            <ul>
-              <li class="contacts__item">
+        <div class="footer__tablet-container">
+          <div class="footer__nav-container">
+            <a class="logo footer__logo" lang="en" href="./index.html"
+              >Web<span class="logo__part logo_theme_dark">Studio</span></a
+            >
+            <address class="contacts">
+              <ul>
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link"
+                    href="https://goo.gl/maps/qk6RUcyFLgprMAsa7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link social__link_color_grey" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link social__link_color_grey" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social__container">
+            <b class="social__text">присоединяйтесь</b>
+            <ul class="social">
+              <li class="social__item">
                 <a
-                  class="contacts__link"
-                  href="https://goo.gl/maps/qk6RUcyFLgprMAsa7"
+                  class="social__link social__link_theme_dark"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  г. Киев, пр-т Леси Украинки, 26
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="contacts__item">
-                <a class="contacts__link social__link_color_grey" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+              <li class="social__item">
+                <a
+                  href="#"
+                  class="social__link social__link_theme_dark"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contacts__item">
-                <a class="contacts__link social__link_color_grey" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
+              <li class="social__item">
+                <a
+                  href="#"
+                  class="social__link social__link_theme_dark"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="#"
+                  class="social__link social__link_theme_dark"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="social_container">
-          <b class="social__text">присоединяйтесь</b>
-          <ul class="social">
-            <li class="social__item">
-              <a
-                class="social__link social__link_theme_dark"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                href="#"
-                class="social__link social__link_theme_dark"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                href="#"
-                class="social__link social__link_theme_dark"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                href="#"
-                class="social__link social__link_theme_dark"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <form class="form">
           <b class="form__text">Подпишитесь на рассылку</b>
@@ -816,8 +847,8 @@
           </label>
         </form>
       </div>
-
-      <script src="./js/mobile-menu.js"></script>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
