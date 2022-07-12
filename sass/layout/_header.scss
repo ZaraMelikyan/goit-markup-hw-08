@@ -10,7 +10,7 @@
 @media screen and (max-width: 1199px) {
     .menu__link_current::after {
         width: calc(100% + 2px);
-        bottom: -1px;
+        bottom: 0px;
     }    
 
     .contact__link {
@@ -104,7 +104,7 @@
             background-color: var(--acsent-text-color);
             border-radius: 2px;
             left: 0;
-            bottom: -3px;
+            bottom: -1px;
         }
     }
 

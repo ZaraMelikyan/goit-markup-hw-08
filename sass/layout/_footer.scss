@@ -6,8 +6,11 @@
 
 .contacts__item {
     display: block;
-}
 
+    &:not(:last-child) {
+    margin-bottom: 9px;
+}
+}
 
 .contacts__link {
     @extend %align;
@@ -30,7 +33,7 @@
 
 .social__text, 
 .form__text {  
-     display: block; 
+    display: block;
      margin-bottom: 20px;    
      font-weight: 700;
      line-height: 1.14;
@@ -54,12 +57,10 @@
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);    
         }
- }     
-
- 
+ }  
 
    .form__btn {    
-    @extend %align;    
+    @extend %align;  
     min-width: 200px;
     padding: 10px 29px;
     margin-left: auto;
@@ -81,83 +82,62 @@
     color: var(--primary-white-color);
    }
 
- 
-
-
-
-
 @media screen and (max-width: 767px) {
     .social__container {           
          margin-top: 60px;
-     }
-
-     .form {
-        margin-top: 60px;
-     }
+     } 
     } 
 
 @media screen and (max-width: 1199px) {
-        .contacts__item {
-            text-align: center;
-        }
-
-        .form {
-            margin-right: auto;
-            margin-left: auto;                   
-        }
-
-        .form__input {
-            max-width: 450px;
-        }
-
-        .social__text, 
-        .form__text {  
-        text-align: center;
-      }
-
+    .social__text, 
+    .form__text {  
+    display: block; 
+   }
      
-       .form__btn { 
+   .form {
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;                   
+   }
+
+    .form__input {
+       max-width: 450px;
+    }
+
+    .social__text, 
+    .form__text {  
+        text-align: center;
+    }
+     
+    .form__btn { 
         margin-top: 20px;
     }
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px)  {
     .footer__tablet-container {
         display: flex;
         align-items: baseline;
-        justify-content: space-between;
-    }       
-    
-    .contacts__link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .contacts__item:not(:last-child) {
-        margin-bottom: 8px;
-    }
-
-    .social_container {
-        margin-right: 89px;
-    } 
-    
+        justify-content: space-around;
+    }    
+            
     .form {
+        margin-top: 60px;
         display: block;
         text-align: center;
-    }
-    
+    }    
 }
 
 @media screen and (min-width: 1200px) {
-    .footer__container-flex {
+    .footer__container-flex,
+    .footer__tablet-container {
         display: flex;
         align-items: baseline;
     }
-
-    .footer__nav-container {
-        margin-right: 70px;
+   
+    .social__container {           
+        margin-left: 70px;
     }
 
     .contacts {
@@ -173,14 +153,16 @@
        display: block;
     }
 
-    .form {            
-        margin-left: auto;
+    .form {  
+        margin-top: 0;          
+        margin-left: auto;      
     }
 
-    .form__label {
+    .form__container {
         display: flex;
     }
 
+   
     .form__input {         
        min-width: 358px;
     }
