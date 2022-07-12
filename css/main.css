@@ -391,16 +391,20 @@ a {
   fill: var(--acsent-text-color);
 }
 
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     min-height: 581px;
     min-width: 528px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .modal {
-    min-height: 609px;
-    min-width: 450px;
   }
 }
 /* 
