@@ -226,18 +226,12 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 480px;
+  width: 480px;
   min-height: 768px;
   position: relative;
   padding-left: 40px;
   padding-top: 48px;
   padding-bottom: 48px;
-}
-
-.mobile-menu__flex-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .mobile-menu__close-btn {
@@ -338,6 +332,11 @@ a {
   color: var(--acsent-text-color);
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-menu__container {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
