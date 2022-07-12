@@ -226,10 +226,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 480px;
   min-height: 768px;
   position: relative;
-  padding: 48px 40px;
+  padding-top: 48px;
   padding-bottom: 48px;
 }
 
